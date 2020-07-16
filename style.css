@@ -133,6 +133,10 @@ body {
 .advice {
     font-size: 26px;
 }
+
+.cursor {
+    width: 8px;
+  }
      
 }
 
