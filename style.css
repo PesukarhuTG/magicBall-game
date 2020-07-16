@@ -34,9 +34,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 20vh;
+    height: 15vh;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .header-heading {
@@ -45,7 +45,7 @@ body {
 
 .header-text {
     font-size: 18px;
-    padding: 20px;
+    padding: 15px;
     max-width: 600px;
     text-align: center;
 }
@@ -96,7 +96,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    /*height: 70vh;*/
 }
 
 .image {
@@ -110,7 +110,8 @@ body {
     font-size: 35px;
     font-weight: bold;
     line-height: 1.1;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .footer {
@@ -184,5 +185,31 @@ body {
     }
 }
 
+@media (max-height:800px) {
+      
+    .header {
+      position: absolute;
+      top: 36px;
+    }
+
+    .advice {
+        font-size: 20px;
+    }
   
- 
+    .image {
+      width: 60%;
+      margin: 5px auto 5px;
+    }
+  }
+
+  @media (max-height: 720px) {
+    .content {
+        padding: 15px;
+        justify-content: flex-end;
+    }
+
+    .header {
+        top: 10px;
+        margin-top: 30px
+    }
+  }

@@ -36,18 +36,12 @@ let image = document.querySelector('.image');
 
 button.addEventListener('click', function () {
     let randomElement = getRandomElement(phrases);
-    smoothly(phrase, 'textContent', randomElement.text)
-    smoothly(image, 'src', randomElement.image)
-
-    if (randomElement.text.length > 40) {
-        advice.style.fontSize = '32px';
-    } else {
-        advice.style.fontSize = '35px';
-    }
+    smoothly(phrase, 'textContent', randomElement.text);
+    smoothly(image, 'src', randomElement.image);
 });
 
 //the firs 2 phrases and img are displayed automatically after loading the page
 for (let i = 0; i <= 1; i = i + 1) {
-    smoothly(phrase, 'textContent', phrases[i].text) //change a text
-    smoothly(image, 'src', phrases[i].image) //change an img
+    smoothly(phrase, 'textContent', phrases[i].text); //change a text
+    smoothly(image, 'src', phrases[i].image); //change an img
 }
